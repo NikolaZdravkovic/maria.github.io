@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title>Armee de terre Marie 300x250</title>
+	<meta charset="utf-8">
+	<meta name="ad.size" content="width=300,height=250">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="oc_main.css">
+	<script type="text/javascript">
+		var clickTag = "";
+	</script>
+</head>
+
+<body>
+	<div id="container">
+		<div id="oc_conteneur">
+			<img src="img/visuel.jpg" id="oc_visuel" />
+			<img src="img/visuel.jpg" id="oc_visuel_flou" />
+
+			<div class="oc_frame" id="oc_frame1">
+				<div id="oc_txt1a"></div>
+				<div id="oc_txt1b"></div>
+				<div id="oc_txt1c"></div>
+			</div>
+
+			<div class="oc_frame" id="oc_frame2">
+				<div id="oc_txt2a"></div>
+				<div id="oc_txt2b"></div>
+				<div id="oc_txt2c"></div>
+				<div id="oc_txt2d"></div>
+			</div>
+
+			<div class="oc_frame" id="oc_frame3">
+				<img src="img/logo.png" id="oc_logo" />
+				<img src="img/sengager.png" id="oc_sengager" />
+			</div>
+
+			<div class="oc_fondu" id="oc_fondu_debut"></div>
+			<div id="oc_bordure"></div>
+		</div>
+	</div>
+
+	<script>
+
+		    var container = document.getElementById('container');
+
+			container.addEventListener('click', function () {
+			console.log('clicked')
+
+			parent.postMessage("Hello parent!", "*");
+		});
+
+	</script>
+</body>
+
+</html>
